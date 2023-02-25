@@ -7,39 +7,81 @@ const data = [
     cat: "Luxury",
   },
   {
-    id: 1,
+    id: 2,
     name: "Invinca Men's Pro Diver 2",
     img: "https://m.media-amazon.com/images/I/81La7n76pxL._AC_UY606_.jpg",
     price: 100,
     cat: "Casually",
   },
   {
-    id: 1,
+    id: 3,
     name: "Timex Men's Pro Diver",
     img: "https://m.media-amazon.com/images/I/71qforFXzmL._AC_UY606_.jpg",
     price: 300,
     cat: "Luxury",
   },
   {
-    id: 1,
+    id: 4,
     name: "Breitling Superocean",
     img: "https://m.media-amazon.com/images/I/61fy5-XCQIL._AC_UX679_.jpg",
     price: 160,
     cat: "Sport",
   },
   {
-    id: 1,
+    id: 5,
     name: "Superocean Men's",
     img: "	https://m.media-amazon.com/images/I/61fy5-XCQIL._AC_UX679_.jpg",
     price: 150,
     cat: "Dress",
   },
   {
-    id: 1,
+    id: 6,
     name: "Pro Diver",
     img: "	https://m.media-amazon.com/images/I/71wFhkGIl9L._AC_UY606_.jpg",
     price: 200,
     cat: "Sport",
+  },
+  {
+    id: 7,
+    name: "Lacoste Boston Men's Chrono",
+    img: "https://m.media-amazon.com/images/I/81lQAr2j5wL._AC_UL600_FMwebp_QL65_.jpg",
+    price: 100,
+    cat: "Luxury",
+  },
+  {
+    id: 8,
+    name: "Lacoste Men's 12.Premium Quartz",
+    img: "	https://m.media-amazon.com/images/I/91JJCVydy-L._AC_UL600_FMwebp_QL65_.jpg",
+    price: 350,
+    cat: "Casually",
+  },
+  {
+    id: 9,
+    name: "Armitron Sport Men's 408159BLK",
+    img: "	https://m.media-amazon.com/images/I/612P5a56Y5L._AC_UL600_FMwebp_QL65_.jpg",
+    price: 370,
+    cat: "Sport",
+  },
+  {
+    id: 10,
+    name: "Armitron Sport Men's Digital",
+    img: "	https://m.media-amazon.com/images/I/814kooPu3GL._AC_UL600_FMwebp_QL65_.jpg",
+    price: 75,
+    cat: "Sport",
+  },
+  {
+    id: 11,
+    name: "Fossil Men's Dean Stainless Steel",
+    img: "https://m.media-amazon.com/images/I/81OFlyd7L4L._AC_UL600_FMwebp_QL65_.jpg",
+    price: 275,
+    cat: "Casually",
+  },
+  {
+    id: 12,
+    name: "Citizen Quartz Mens Watch",
+    img: "		https://m.media-amazon.com/images/I/81YJMXUexJL._AC_UL600_FMwebp_QL65_.jpg",
+    price: 390,
+    cat: "Luxury",
   },
 ];
 
@@ -54,7 +96,7 @@ const displayProducts = (filteredProducts) => {
     .map(
       (product) =>
         `
-        <div class="product">
+        <div class="product" >
             <img src=${product.img} alt="" />
             <span class="name">${product.name}</span>
             <span class="priceText">${product.price}$</span>
